@@ -1,1 +1,1 @@
-web: gunicorn Pokomon_dl:app
+web: gunicorn app:app
