@@ -14,15 +14,15 @@ from gevent.pywsgi import WSGIServer
 from keras.models import model_from_json
 import webbrowser
 app = Flask(__name__)
-json_file=open("https://github.com/gold999-lgtm/POKOMON-PREDICTION/blob/main/models/model_json","r")
+json_file=open("blob/main/models/model_json","r")
 loaded_model_json=json_file.read()
 json_file.close()
 loaded_model=model_from_json(loaded_model_json)
-loaded_model.load_weights("https://github.com/gold999-lgtm/POKOMON-PREDICTION/blob/main/models/model.h5")
+loaded_model.load_weights("blob/main/models/model.h5")
 loaded_model.compile(optimizer="adam",loss="categorical_crossentropy",metrics=["accuracy"])
 @app.route('/', methods=['GET'])
 def index():
-    return render_template('https://github.com/gold999-lgtm/POKOMON-PREDICTION/blob/main/templates/index.html')
+    return render_template('blob/main/templates/index.html')
 def model_predict(img_path, loaded_model):
     img = image.load_img(img_path, target_size=(64,64))
     x = image.img_to_array(img)
