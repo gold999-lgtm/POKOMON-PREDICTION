@@ -12,6 +12,7 @@ from flask import Flask, redirect, url_for, request, render_template
 from werkzeug.utils import secure_filename
 from gevent.pywsgi import WSGIServer
 from keras.models import model_from_json
+from PIL import Image
 import webbrowser
 app = Flask(__name__)
 json_file=open("models/model_json","r")
