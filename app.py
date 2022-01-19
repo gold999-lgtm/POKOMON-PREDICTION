@@ -49,7 +49,7 @@ def upload():
         
         file_path = os.path.join(
             secure_filename(f.filename))
-        f.save(file_path)
+        
         preds = model_predict(file_path, loaded_model)
         return preds
     return None
