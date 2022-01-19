@@ -2,4 +2,4 @@ gunicorn
 tensorflow-cpu
 flask
 gevent
-
+PIL
