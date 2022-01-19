@@ -4,7 +4,7 @@ altair==4.2.0
 
 anaconda-navigator==2.1.1
 
-anyio @ file:///C:/ci/anyio_1620153135622/work/dist
+
 appdirs==1.4.4
 argh==0.26.2
 argon2-cffi @ file:///C:/ci/argon2-cffi_1613037869401/work
