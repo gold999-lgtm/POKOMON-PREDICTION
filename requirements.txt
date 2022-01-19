@@ -8,7 +8,7 @@ anaconda-navigator==2.1.1
 appdirs==1.4.4
 argh==0.26.2
 
-arrow @ file:///C:/ci/arrow_1617738834352/work
+
 asn1crypto @ file:///tmp/build/80754af9/asn1crypto_1596577642040/work
 astor==0.8.1
 astroid @ file:///C:/ci/astroid_1628063282661/work
