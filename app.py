@@ -14,11 +14,11 @@ from gevent.pywsgi import WSGIServer
 from keras.models import model_from_json
 import webbrowser
 app = Flask(__name__)
-json_file=open("C:/Users/Swati Lohiya/Downloads/poko package/models/model_json","r")
+json_file=open("models/model_json","r")
 loaded_model_json=json_file.read()
 json_file.close()
 loaded_model=model_from_json(loaded_model_json)
-loaded_model.load_weights("C:/Users/Swati Lohiya/Downloads/poko package/models/model.h5")
+loaded_model.load_weights("models/model.h5")
 loaded_model.compile(optimizer="adam",loss="categorical_crossentropy",metrics=["accuracy"])
 @app.route('/', methods=['GET'])
 def index():
